@@ -21,8 +21,8 @@ fun throwingException(a:Int){
         1 -> throw SQLException()
         2 -> throw NullPointerException()
         3 -> throw IllegalArgumentException()
-        4 -> throw CustomException("Hello I'm Custom Exception")
+        4 -> throw CustomExceptionInKt("Hello I'm Custom Exception")
     }
 }
 
-class CustomException(a:String): Exception(a)
+class CustomExceptionInKt(a:String): Exception(a)
